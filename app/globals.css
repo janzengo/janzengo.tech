@@ -360,6 +360,16 @@ html {
   scroll-behavior: smooth;
 }
 
+.sticky-section-header {
+  display: none;
+}
+
+.sticky-section-header.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .fixed-section {
@@ -380,6 +390,7 @@ html {
   }
 
   .sticky-section-header {
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -392,13 +403,12 @@ html {
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     transform: translateY(-100%);
     opacity: 0;
-    border-bottom: 1px solid rgba(142, 168, 50, 0.1);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   }
 
   .sticky-section-header.visible {
     transform: translateY(0);
     opacity: 1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   }
 
   .sticky-section-header h2 {

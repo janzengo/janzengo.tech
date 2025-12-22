@@ -68,6 +68,13 @@ const projects = [
     thumb: '/images/project-images/icas-dc.png',
     links: [{ url: '#', icon: 'fas fa-external-link-alt' }],
   },
+  {
+    title: 'AGGTEDeck Cladding & Decking Website',
+    description: 'A dynamic and responsive online platform showcasing the services, products, and aquaponics expertise of Aquaponics GoGreen Trading and Enterprise, a WPC dealership, construction, and aquaponics company.',
+    skills: ['Vanilla HTML + CSS + PHP', 'Bootstrap', 'AdminLTE'],
+    thumb: '/images/project-images/aggtedeck.png',
+    links: [{ url: '#', icon: 'fas fa-external-link-alt' }],
+  },
 ];
 
 export default function Projects() {

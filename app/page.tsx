@@ -13,34 +13,95 @@ import Contact from '@/components/sections/Contact';
 export default function Home() {
   const [activeSection, setActiveSection] = useState('about');
   const [spotlight, setSpotlight] = useState<{ x: number; y: number }>({ x: 50, y: 50 });
+  const [showSticky, setShowSticky] = useState(false);
+  const [stickySection, setStickySection] = useState<string | null>(null);
 
   useEffect(() => {
     AOS.init({ duration: 500, easing: 'ease-out', once: true });
   }, []);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ['about', 'skills', 'experience', 'projects', 'contact'];
-      const scrollPosition = window.scrollY + window.innerHeight / 3;
+  const sectionLabels: Record<string, string> = {
+    about: 'about me',
+    skills: 'skills',
+    experience: 'experience',
+    projects: 'projects',
+    contact: 'contact',
+  };
 
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const { offsetTop, offsetHeight } = element;
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(section);
-            break;
+  useEffect(() => {
+    const sectionIds = ['about', 'skills', 'experience', 'projects', 'contact'];
+    const stickySectionIds = ['about', 'skills', 'experience', 'projects']; // exclude contact
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (ticking) return;
+      ticking = true;
+
+      requestAnimationFrame(() => {
+        const viewportCenter = window.innerHeight / 2;
+        let bestSection = sectionIds[0];
+        let bestDistance = Number.POSITIVE_INFINITY;
+
+        sectionIds.forEach((id) => {
+          const el = document.getElementById(id);
+          if (!el) return;
+          const rect = el.getBoundingClientRect();
+          const sectionCenter = rect.top + rect.height / 2;
+          const distance = Math.abs(sectionCenter - viewportCenter);
+
+          if (distance < bestDistance) {
+            bestDistance = distance;
+            bestSection = id;
+          }
+        });
+
+        // Sticky header: use the last header that has passed the top edge
+        let currentSticky: string | null = null;
+        stickySectionIds.forEach((id) => {
+          const headerEl = document.querySelector<HTMLElement>(`#${id} h2`);
+          if (!headerEl) return;
+          const headerTop = headerEl.getBoundingClientRect().top;
+          if (headerTop <= 0) {
+            currentSticky = id;
+          }
+        });
+
+        // Hide near the end of the current sticky section (so it "unsticks" before the next)
+        let shouldShowSticky = currentSticky !== null;
+        if (currentSticky) {
+          const sectionEl = document.getElementById(currentSticky);
+          if (sectionEl) {
+            const sectionRect = sectionEl.getBoundingClientRect();
+            if (sectionRect.bottom <= 64) {
+              shouldShowSticky = false;
+            }
           }
         }
-      }
+
+        setActiveSection(bestSection);
+        setShowSticky(shouldShowSticky);
+        setStickySection(currentSticky);
+        ticking = false;
+      });
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
   }, []);
 
   return (
     <>
+      <div className={`sticky-section-header ${showSticky ? 'visible' : 'hidden'}`}>
+        <span className="text-[#F4F5E3] text-xs font-semibold tracking-[0.18em] uppercase">
+          &lt; {stickySection ? sectionLabels[stickySection] ?? stickySection : ''} /&gt;
+        </span>
+      </div>
       <div
         className="content-wrapper mt-8"
         onMouseMove={(e) => setSpotlight({ x: e.clientX, y: e.clientY })}
