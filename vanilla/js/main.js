@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     experiences.forEach(exp => {
         const expElement = document.createElement('div');
         expElement.className = 'experience-card';
-        expElement.setAttribute('data-aos', 'fade-up');
+        expElement.setAttribute('data-aos', 'fade-in');
         expElement.innerHTML = `
             <h3 class="text-xl font-bold mb-2">${exp.company}</h3>
             <p class="text-teal-400 mb-4">${exp.duration}</p>
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     projects.forEach(project => {
         const projectElement = document.createElement('div');
         projectElement.className = 'project-card p-6';
-        projectElement.setAttribute('data-aos', 'fade-up');
+        projectElement.setAttribute('data-aos', 'fade-in');
         projectElement.innerHTML = `
             <h3 class="text-xl font-bold mb-4">${project.title}</h3>
             <p class="mb-4">${project.description}</p>

@@ -1,35 +1,36 @@
-<div align="center">
-  <img alt="Logo" src="images/logo.png" width="100" />
-</div>
-<h1 align="center">
-  janzengo.tech
-</h1>
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-<p align="center">
-  Built with HTML, <a href="https://tailwindcss.com/">Tailwind CSS</a>, <a href="https://jquery.com/">jQuery</a>; Hosted on <a href="https://pages.github.com/">GitHub Pages</a> Design inspired by <a href="https://brittanychiang.com/">Brittany Chiang</a>
-</p>
+## Getting Started
 
-![demo](https://github.com/janzengo/janzengo.github.io/blob/c69d5a4ba945a01e1ed60ff830ddf47f56b02443/images/page-screenshot.PNG)
+First, run the development server:
 
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## 🎨 Color Reference
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-| Color          | Hex                                                             |
-| -------------- | --------------------------------------------------------------- |
-| Navy           | ![#0a192f](https://readme-swatches.vercel.app/0a192f) `#0a192f` |
-| Light Navy     | ![#112240](https://readme-swatches.vercel.app/112240) `#112240` |
-| Lightest Navy  | ![#233554](https://readme-swatches.vercel.app/233554) `#233554` |
-| Slate          | ![#8892b0](https://readme-swatches.vercel.app/8892b0) `#8892b0` |
-| Light Slate    | ![#a8b2d1](https://readme-swatches.vercel.app/a8b2d1) `#a8b2d1` |
-| Lightest Slate | ![#ccd6f6](https://readme-swatches.vercel.app/ccd6f6) `#ccd6f6` |
-| White          | ![#e6f1ff](https://readme-swatches.vercel.app/e6f1ff) `#e6f1ff` |
-| Green          | ![#64ffda](https://readme-swatches.vercel.app/64ffda) `#64ffda` |
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## 🙏 Credits
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-This portfolio website is heavily inspired by [Brittany Chiang's](https://brittanychiang.com/) beautiful portfolio design. I've recreated her design with my own content and some modifications while maintaining the original aesthetic and feel.
+## Learn More
 
-- [Brittany Chiang's Portfolio v4](https://v4.brittanychiang.com/)
-- [Brittany Chiang's Current Portfolio](https://brittanychiang.com/)
+To learn more about Next.js, take a look at the following resources:
 
-If you like this design, please check out Brittany's original work and give it some love!
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
