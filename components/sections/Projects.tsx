@@ -10,7 +10,7 @@ const projects = [
     thumb: '/images/project-images/balagtas-social-care.png',
     links: [
       {
-        url: '',
+        url: '#',
         icon: 'fas fa-external-link-alt',
       },
     ],
@@ -20,7 +20,7 @@ const projects = [
     description: 'A business-project led by two IT student leaders to help capstone students and leaders to build their first working software solution.',
     skills: ['Next.js', 'Tailwind CSS', 'Supabase'],
     thumb: '/images/project-images/nekotech.png',
-    links: [{ url: 'https://neko.tech', icon: 'fas fa-external-link-alt' }],
+    links: [{ url: '#' }],
   },
   {
     title: 'E-Halal BTECHenyo',
@@ -51,8 +51,7 @@ const projects = [
     skills: ['Next.js', 'Tailwind CSS', 'Firebase', 'Firestore'],
     thumb: '/images/project-images/greentech.png',
     links: [
-      { url: 'https://github.com/ws-jammify/ws-jammify.github.io', icon: 'fab fa-github' },
-      { url: 'https://jammify.me', icon: 'fas fa-external-link-alt' },
+      { url: 'https://greentech-edu.online/', icon: 'fas fa-external-link-alt' },
     ],
   },
   {
@@ -60,14 +59,14 @@ const projects = [
     description: 'Rooster Management System that was built for efficiency and eliminate paper-based transactions.',
     skills: ['Next.js', 'Tailwind CSS', 'Firebase', 'Supabase'],
     thumb: '/images/project-images/triple-a.png',
-    links: [{ url: 'https://sciencequizzards.space', icon: 'fas fa-external-link-alt' }],
+    links: [{ url: '#', icon: 'fas fa-external-link-alt' }],
   },
   {
     title: 'ICAS De Calarian Website',
     description: 'A modern institutional website designed to streamline information dissemination and the admission process for ICAS De Calarian. It serves as a central hub for academic news, school updates, and student engagement.',
     skills: ['WordPress', 'Elementor'],
     thumb: '/images/project-images/icas-dc.png',
-    links: [{ url: 'https://sciencequizzards.space', icon: 'fas fa-external-link-alt' }],
+    links: [{ url: '#', icon: 'fas fa-external-link-alt' }],
   },
 ];
 
@@ -90,7 +89,7 @@ export default function Projects() {
               )}
             >
               <div
-                className="shrink-0 w-full md:w-52 lg:w-[230px] aspect-[16/10] rounded-md overflow-hidden bg-[#1B2B1B] transition-all duration-200 border border-transparent group-hover:border-[#8EA832]/50"
+                className="shrink-0 w-full md:w-52 lg:w-[230px] aspect-[16/10] rounded-md overflow-hidden bg-[#1B2B1B] transition-all duration-200 border border-transparent group-hover:border-[#8EA832]/50 relative"
               >
                 <Image
                   src={project.thumb}
@@ -101,6 +100,7 @@ export default function Projects() {
                   unoptimized
                   className="w-full h-full object-cover"
                 />
+                <div className="absolute inset-0 bg-[#8EA832]/10 opacity-100 transition-opacity duration-300 group-hover:opacity-0" />
               </div>
 
               <div className="flex-1 space-y-2.5 md:py-1 md:ml-6">
@@ -116,12 +116,10 @@ export default function Projects() {
                         className="inline-flex items-center gap-2 hover:text-[#8EA832] transition-colors"
                       >
                         <span>{project.title}</span>
-                        <span className="inline-block align-middle text-[#8EA832] text-sm transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5">↗</span>
                       </a>
                     ) : (
                       <span className="inline-flex items-center gap-2">
                         {project.title}
-                        <span className="inline-block align-middle text-[#8EA832] text-sm transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5">↗</span>
                       </span>
                     )}
                   </CardTitle>

@@ -3,6 +3,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://janzengo.tech"),
   title: "Janzen Go | Aspiring Full Stack Developer | Philippines",
   description: "Janzen Go is an Aspiring Full Stack Developer from the Philippines, building robust and scalable server-side applications with a focus on security, performance, and clean architecture.",
   keywords: "Janzen Go, Aspiring Full Stack Developer, Web Developer, Software Engineer, Philippines, RESTful APIs, Frontend, Backend, JavaScript, React, PHP, Python",
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     description: "Building robust and scalable server-side applications with a focus on security, performance, and clean architecture.",
     images: [
       {
-        url: "https://janzengo.tech/images/og-image.png",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
       },
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Janzen Go | Aspiring Full Stack Developer",
     description: "Building robust and scalable server-side applications with a focus on security, performance, and clean architecture.",
-    images: ["https://janzengo.tech/images/og-image.png"],
+    images: ["/images/og-image.png"],
   },
   icons: {
     icon: "/images/logo.ico",
