@@ -103,7 +103,7 @@ export default function Home() {
         </span>
       </div>
       <div
-        className="content-wrapper mt-8"
+        className="content-wrapper mt-8 lg:mt-0"
         onMouseMove={(e) => setSpotlight({ x: e.clientX, y: e.clientY })}
         onMouseLeave={() => setSpotlight({ x: window.innerWidth / 2, y: window.innerHeight / 2 })}
       >
@@ -127,7 +127,7 @@ export default function Home() {
               <div className="text-lg md:text-xl font-normal text-[#D4D6A8] mb-8 tracking-wide">
                 AWS Learning Club Lead <br/> Aspiring Full Stack Developer
               </div>
-              <p className="text-md text-[#D4D6A8] mb-8 leading-relaxed">
+              <p className="text-md text-[#D4D6A8] mb-5 leading-relaxed">
                 A current AWS Learning Club Lead and Cloud Advocate, I'm an Aspiring Full Stack Developer passionate about building simple, minimal, yet useful software solutions.
               </p>
             </div>
@@ -136,7 +136,7 @@ export default function Home() {
             <SectionNavigation activeSection={activeSection} />
 
             {/* Social Links */}
-            <div className="space-y-4 left-content">
+            <div className="space-y-4 left-content pb-10">
               <div className="flex flex-row space-x-4">
                 <a
                   href="https://github.com/janzengo"
@@ -171,7 +171,7 @@ export default function Home() {
                   <i className="fa-brands fa-bluesky text-2xl"></i>
                 </a>
               </div>
-              <p className="text-sm text-[#D4D6A8] mt-6 opacity-50">© 2025 Janzen Go. All rights reserved.</p>
+              <p className="text-sm text-[#D4D6A8] opacity-50">© 2025 Janzen Go. All rights reserved.</p>
             </div>
           </section>
 
