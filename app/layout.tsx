@@ -13,19 +13,11 @@ export const metadata: Metadata = {
     url: "https://janzengo.tech",
     title: "Janzen Go | Aspiring Full Stack Developer",
     description: "Building robust and scalable server-side applications with a focus on security, performance, and clean architecture.",
-    images: [
-      {
-        url: "/images/og-image.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Janzen Go | Aspiring Full Stack Developer",
     description: "Building robust and scalable server-side applications with a focus on security, performance, and clean architecture.",
-    images: ["/images/og-image.png"],
   },
   icons: {
     icon: "/images/logo.ico",
