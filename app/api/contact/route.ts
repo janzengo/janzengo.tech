@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
       subject: `New contact from ${name}`,
       text: `From: ${name} <${email}>\n\n${message}`,
       html: renderAdminEmail({
-        logoUrl: 'https://janzengo.tech/images/logo.ico',
+        logoUrl: 'https://janzen.is-a.dev/images/logo.ico',
         pill: 'New inquiry',
         headline: `Message from ${name}`,
         subhead: 'A new contact request was submitted on janzengo.tech',
@@ -36,7 +36,7 @@ export async function POST(req: NextRequest) {
       subject: 'Thanks for reaching out!',
       text: `Hi ${name},\n\nThanks for contacting Janzen. Your message was received:\n\n${message}\n\nHe will get back to you soon.\n\n— janzengo.tech`,
       html: renderClientEmail({
-        logoUrl: 'https://janzengo.tech/images/logo.ico',
+        logoUrl: 'https://janzen.is-a.dev/images/logo.ico',
         headline: 'Thanks for reaching out!',
         subhead: 'We received your message and will get back to you soon.',
         messageHtml: msgHtml,

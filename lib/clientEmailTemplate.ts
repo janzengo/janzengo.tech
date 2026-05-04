@@ -134,7 +134,7 @@ const baseTemplate = `
           {{#if logoUrl}}
             <img src="{{logoUrl}}" alt="Logo" class="logo" style="height:24px;width:auto;object-fit:contain;" />
           {{else}}
-            <a href="https://janzengo.tech" class="logo">JANZENGO<span>.</span></a>
+            <a href="https://janzen.is-a.dev" class="logo">JANZENGO<span>.</span></a>
           {{/if}}
         </div>
 
@@ -146,7 +146,7 @@ const baseTemplate = `
           
           <p class="body-text">{{subhead}}</p>
 
-          <a href="https://janzengo.tech" class="button">Visit Website</a>
+          <a href="https://janzen.is-a.dev" class="button">Visit Website</a>
 
           <!-- Optional: Show them what they sent so they have a record -->
           <div class="quote-box">
