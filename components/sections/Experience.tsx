@@ -66,7 +66,7 @@ export default function Experience() {
       </div>
       <br />
       <a
-        href="/resume.pdf"
+        href="/JanneilJanzenGo-Resume2026.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="text-[#FFFFF0] text-xs hover:text-[#8EA832] hover:underline transition-all"
