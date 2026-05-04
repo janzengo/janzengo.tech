@@ -9,31 +9,22 @@ const projects = [
     description: 'An enterprise-grade system made for the MSWDO of Balagtas Bulacan to digitally transform their paper-based services-related transactions and data management.',
     skills: ['Laravel', 'React', 'Inertia.js', 'MySQL', 'Python'],
     thumb: '/images/project-images/balagtas-social-care.png',
-    status: 'Offline',
-    links: [
-      {
-        url: '#',
-        icon: 'fas fa-tools',
-      },
-    ],
+    status: 'Offline'
   },
   {
     title: 'NekoTech',
     description: 'A business-project led by two IT student leaders to help capstone students and leaders to build their first working software solution.',
     skills: ['Next.js', 'Tailwind CSS', 'Supabase'],
     thumb: '/images/project-images/nekotech.png',
-    status: 'In Development',
-    links: [{ url: '#', icon: 'fas fa-tools' }],
+    status: 'In Development'
   },
   {
     title: 'E-Halal BTECHenyo',
     description:
       'A full-featured e-voting platform with pre-voting, voting, and post-voting modules tailored for campus elections.',
-    skills: ['PHP', 'AdminLTE', 'Bootstrap', 'MySQL'],
-    status: 'Live',
-    statIcon: 'fas fa-external-link-alt',
-    thumb: '/images/project-images/e-halal.png',
-    links: [{ url: 'https://ehalal.tech', icon: 'fas fa-external-link-alt' }],
+    skills: ['Laravel', 'React', 'Inertia.js', 'MySQL'],
+    status: 'In Development',
+    thumb: '/images/project-images/e-halal.png'
   },
   {
     title: 'Yamaha Motors TMS',

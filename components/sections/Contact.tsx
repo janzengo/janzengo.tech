@@ -52,7 +52,7 @@ export default function Contact() {
               <i className="fas fa-phone text-[#8EA832] w-5"></i>
               <div>
                 <p className="text-[#F4F5E3] font-medium">Phone</p>
-                <p className="text-[#D4D6A8]">+63962-742-1313</p>
+                <p className="text-[#D4D6A8]">+63955-926-2482</p>
                 <p className="text-[#D4D6A8]">+63976-247-7125</p>
               </div>
             </div>

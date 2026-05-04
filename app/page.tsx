@@ -196,7 +196,7 @@ export default function Home() {
             {/* Credits Section */}
             <div className="text-left mt-16 mb-6 py-4">
               <p className="text-sm text-[#D4D6A8]/60 max-w-xl">
-                Designed and built by yours truly. Coded in{" "}
+                Coded in{" "}
                 <a
                   href="https://code.visualstudio.com/"
                   target="_blank"
@@ -205,7 +205,7 @@ export default function Home() {
                 >
                   Visual Studio Code
                 </a>
-                . Built with{" "}
+                . <br />Built with{" "}
                 <a
                   href="https://nextjs.org"
                   target="_blank"
