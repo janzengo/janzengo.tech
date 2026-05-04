@@ -174,14 +174,6 @@ export default function Projects() {
             </Card>
           );
         })}
-        <Link
-          href="/resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#FFFFF0] text-xs hover:text-[#8EA832] hover:underline transition-all inline-flex items-center gap-1"
-        >
-          View Project Gallery<i className="fas fa-external-link-alt"></i>
-          </Link>
       </div> 
     </div>
   );

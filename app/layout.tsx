@@ -3,21 +3,30 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://janzengo.tech"),
-  title: "Janzen Go | Aspiring Full Stack Developer | Philippines",
-  description: "Janzen Go is an Aspiring Full Stack Developer from the Philippines, building robust and scalable server-side applications with a focus on security, performance, and clean architecture.",
-  keywords: "Janzen Go, Aspiring Full Stack Developer, Web Developer, Software Engineer, Philippines, RESTful APIs, Frontend, Backend, JavaScript, React, PHP, Python",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://janzengo.tech"),
+  title: "Janneil Janzen R. Go | Frontend Developer / Graphic Designer | Philippines",
+  description: "Janneil Janzen R. Go is an aspiring Fullstack Developer and Graphic Designer from the Philippines, with practical exposure to Next.js, TailwindCSS, Firebase, and Laravel + React. Passionate about creating clean, functional, and user-friendly digital experiences.",
+  keywords: "Janneil Janzen R. Go, Frontend Developer, Graphic Designer, Web Developer, Fullstack Developer, Philippines, Next.js, React, Laravel, TailwindCSS, Firebase, WordPress, Adobe Photoshop, Adobe Illustrator",
   authors: [{ name: "Janzen Go" }],
   openGraph: {
     type: "website",
-    url: "https://janzengo.tech",
-    title: "Janzen Go | Aspiring Full Stack Developer",
-    description: "Building robust and scalable server-side applications with a focus on security, performance, and clean architecture.",
+    url: "https://janzen.is-a.dev",
+    title: "Janneil Janzen R. Go | Frontend Developer / Graphic Designer",
+    description: "Aspiring Fullstack Developer and Graphic Designer with practical exposure to Next.js, TailwindCSS, Firebase, and Laravel + React. Passionate about creating clean, functional, and user-friendly digital experiences.",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Janneil Janzen R. Go | Frontend Developer / Graphic Designer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Janzen Go | Aspiring Full Stack Developer",
-    description: "Building robust and scalable server-side applications with a focus on security, performance, and clean architecture.",
+    title: "Janneil Janzen R. Go | Frontend Developer / Graphic Designer",
+    description: "Aspiring Fullstack Developer and Graphic Designer with practical exposure to Next.js, TailwindCSS, Firebase, and Laravel + React. Passionate about creating clean, functional, and user-friendly digital experiences.",
+    images: ["/images/og-image.png"],
   },
   icons: {
     icon: "/images/logo.ico",
@@ -44,15 +53,15 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Janzen Go",
+              name: "Janneil Janzen R. Go",
               url: "https://janzengo.tech",
               image: "https://janzengo.tech/images/profile.jpg",
-              jobTitle: "Aspiring Full Stack Developer",
+              jobTitle: "Frontend Developer / Graphic Designer",
               worksFor: {
                 "@type": "Organization",
                 name: "Freelance",
               },
-              description: "Building robust and scalable server-side applications with a focus on security, performance, and clean architecture.",
+              description: "Aspiring Fullstack Developer and Graphic Designer with practical exposure to Next.js, TailwindCSS, Firebase, and Laravel + React. Passionate about creating clean, functional, and user-friendly digital experiences.",
               sameAs: [
                 "https://github.com/janzengo",
                 "https://linkedin.com/in/janzengo",

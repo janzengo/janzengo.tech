@@ -171,7 +171,7 @@ export default function Home() {
                   <i className="fa-brands fa-bluesky text-2xl"></i>
                 </a>
               </div>
-              <p className="text-sm text-[#D4D6A8] opacity-50">© 2025 Janzen Go. All rights reserved.</p>
+              <p className="text-sm text-[#D4D6A8] opacity-50">© {new Date().getFullYear()} Janzen Go. All rights reserved.</p>
             </div>
           </section>
 

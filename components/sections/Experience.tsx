@@ -1,37 +1,26 @@
 const experiences = [
   {
-    title: 'Yearbook Graphic Designer',
+    title: 'Freelance Yearbook Designer',
     company: 'Immaculate Conception Archdiocesan School de Calarian (ICAS de Calarian)',
-    period: '2017 - Present',
+    period: '2017 - 2025',
     description: [
-      'Designed and produced school yearbooks using Adobe InDesign and Photoshop',
-      'Transitioned to Canva for yearbook creation, adapting to modern design tools',
+      'Designed and produced school yearbooks using InDesign and Photoshop (2017-2019)',
+      'Transitioned to Canva for yearbook creation, adapting to modern design tools (2020-2025)',
       'Delivered visually appealing and well-organized yearbooks for a diverse student body',
     ],
-    skills: ['Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign', 'Canva'],
+    skills: ['Adobe InDesign', 'Adobe Photoshop', 'Adobe Illustrator', 'Canva', 'Graphic Design'],
   },
   {
-    title: 'Frontend Developer',
-    company: 'AGGTEDeck WPC Cladding & Decking',
-    period: '2020 - Present',
+    title: 'Freelance Web Developer & Web Master',
+    company: 'AGGTEDeck Enterprises Incorporated',
+    period: '2022 - 2025',
     description: [
-      'Developed and launched a construction landing page website for a company selling and installing WPC products',
-      'Responsible for ongoing maintenance and updates to ensure optimal website performance',
-      'Supported the company\'s online presence by keeping the site current and fully functional',
+      'Developed and enhanced the company website',
+      'Implemented new features and functionality to improve user experience',
+      'Managed all technical aspects of web presence and digital operations',
     ],
-    skills: ['PHP', 'JavaScript', 'Bootstrap', 'HTML', 'CSS'],
-  },
-  {
-    title: 'Freelance Capstone System Developer',
-    company: 'NekoTech',
-    period: '2024 - Present',
-    description: [
-      'Collaborated with graduating students to design, develop, and deploy custom full-stack web and mobile applications for academic capstone projects',
-      'Translated complex research requirements into functional technical specifications and user-friendly interfaces',
-      'Provided end-to-end technical support, including database schema design, API integration, and troubleshooting during final defense demonstrations',
-    ],
-    skills: ['Full-stack Development', 'API Integration', 'Database Design', 'React', 'Node.js'],
-  },
+    skills: ['PHP', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'Full-stack Development'],
+  }
 ];
 
 export default function Experience() {
